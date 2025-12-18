@@ -10,6 +10,7 @@ export const getAppInfo = (req, res) => {
         version: pkg.version,
         description: pkg.description,
         environment: process.env.NODE_ENV || 'development',
-        nodeVersion: process.version
+        nodeVersion: process.version,
+        timestamp: new Date().toISOString()
     });
 };
