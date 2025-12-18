@@ -4,6 +4,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 
 import healthRoutes from './routes/health.routes.js';
+import infoRoutes from './routes/info.routes.js';
 import { errorHandler } from './middleware/error.middleware.js';
 import { notFoundHandler } from './middleware/notFound.middleware.js';
 
@@ -17,6 +18,7 @@ app.use(express.json()); // Parse JSON bodies
 
 // Routes
 app.use('/api/health', healthRoutes);
+app.use('/api/info', infoRoutes);
 
 // Error Handling
 app.use(notFoundHandler);
