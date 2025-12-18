@@ -1,7 +1,7 @@
 {
   "name": "express-production-starter",
   "version": "1.0.0",
-  "description": "Production-ready Express.js starter with ES Modules",
+  "description": "A modern, production-ready Express.js application boilerplate integrating AI capabilities, featuring ES Modules, security best practices, and scalable architecture",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
