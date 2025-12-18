@@ -5,6 +5,7 @@ import morgan from 'morgan';
 
 import healthRoutes from './routes/health.routes.js';
 import infoRoutes from './routes/info.routes.js';
+import metricsRoutes from './routes/metrics.routes.js';
 import { errorHandler } from './middleware/error.middleware.js';
 import { notFoundHandler } from './middleware/notFound.middleware.js';
 
@@ -19,6 +20,7 @@ app.use(express.json()); // Parse JSON bodies
 // Routes
 app.use('/api/health', healthRoutes);
 app.use('/api/info', infoRoutes);
+app.use('/api/metrics', metricsRoutes);
 
 // Error Handling
 app.use(notFoundHandler);
