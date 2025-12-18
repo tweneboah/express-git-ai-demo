@@ -9,6 +9,7 @@ export const getAppInfo = (req, res) => {
         name: pkg.name,
         version: pkg.version,
         description: pkg.description,
-        environment: process.env.NODE_ENV || 'development'
+        environment: process.env.NODE_ENV || 'development',
+        nodeVersion: process.version
     });
 };
